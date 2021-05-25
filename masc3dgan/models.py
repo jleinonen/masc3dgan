@@ -10,9 +10,9 @@ from tensorflow.keras.layers import AveragePooling2D, AveragePooling3D
 from tensorflow.keras.layers import BatchNormalization, Concatenate, ELU
 from tensorflow.keras.regularizers import l2
 
-from layers import InstanceNormalization, SplitChannels, BatchStd
-from layers import SNDense, SNConv2D, SNConv3D
-from layers import ReflectionPadding2D, ReflectionPadding3D
+from .layers import InstanceNormalization, SplitChannels, BatchStd
+from .layers import SNDense, SNConv2D, SNConv3D
+from .layers import ReflectionPadding2D, ReflectionPadding3D
 
 
 def dense_block(channels, norm=None, activation='leakyrelu'):

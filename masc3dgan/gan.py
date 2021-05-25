@@ -7,8 +7,9 @@ from tensorflow.keras.layers import Input, Lambda, Average, Multiply
 from tensorflow.keras import backend as K
 from tensorflow.keras.optimizers import Adam
 from tensorflow.python.keras.utils import generic_utils
-from layers import GradientPenalty, RandomWeightedAverage, LogMass
-from meta import Nontrainable, save_opt_weights, load_opt_weights
+from .layers import GradientPenalty, RandomWeightedAverage, LogMass
+from .meta import Nontrainable, save_opt_weights, load_opt_weights
+
 
 
 class ConditionalWGANGP(object):
